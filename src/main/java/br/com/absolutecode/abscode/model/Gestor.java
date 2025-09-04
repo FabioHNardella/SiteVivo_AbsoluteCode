@@ -25,4 +25,28 @@ public class Gestor {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "ID_SETOR", nullable = false)
     private Setor setor;
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getSobrenome() {
+        return sobrenome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public Setor getSetor() {
+        return setor;
+    }
 }

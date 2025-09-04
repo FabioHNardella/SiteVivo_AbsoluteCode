@@ -25,4 +25,28 @@ public class NovoColaborador {
     @OneToOne
     @JoinColumn(name = "ID_BUDDY", nullable = false)
     private Buddy buddy;
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getSobrenome() {
+        return sobrenome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public Buddy getBuddy() {
+        return buddy;
+    }
 }

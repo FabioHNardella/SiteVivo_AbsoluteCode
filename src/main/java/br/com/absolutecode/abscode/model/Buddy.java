@@ -30,4 +30,32 @@ public class Buddy {
     @OneToOne
     @JoinColumn(name = "ID_NOVO_COLABORADOR", nullable = false)
     private NovoColaborador novoColaborador;
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getSobrenome() {
+        return sobrenome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public Setor getSetor() {
+        return setor;
+    }
+
+    public NovoColaborador getNovoColaborador() {
+        return novoColaborador;
+    }
 }

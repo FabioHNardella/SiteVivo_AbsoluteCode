@@ -19,4 +19,20 @@ public class Setor {
 
     @OneToMany(mappedBy = "setor")  // Mapeando a propriedade user da classe Order
     private List<Buddy> buddies;
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public List<Gestor> getGestores() {
+        return gestores;
+    }
+
+    public List<Buddy> getBuddies() {
+        return buddies;
+    }
 }
